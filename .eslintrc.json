@@ -1,0 +1,35 @@
+{
+  "extends": ["next/core-web-vitals", "plugin:@tanstack/eslint-plugin-query/recommended"],
+  "plugins": [ "unused-imports", "check-file" ],
+  "ignorePatterns": [
+    // third-party code, so it should be excluded
+    "charting_library/",
+
+    // these should be resolved eventually, but for now they are excluded
+    "src/components/launchpad/",
+    "src/components/editor/",
+    "src/components/modal/",
+    "src/modules/launchpad/",
+    "src/pages",
+    "src/modules/view"
+  ],
+  "rules": {
+    "unused-imports/no-unused-imports": "error"
+    // "check-file/filename-naming-convention": [
+    //   "error",
+    //   {
+    //     // you can test this glob at https://globster.xyz
+    //     // pages must be kebab-case but allow for _ prefix and [...param] patterns
+    //     "src/pages/**/*.{tsx,css,ts}": "?(_)?(\\[)?(...)+([0-9a-z\\-])?(])",
+    //     "src/{modules,components,styles}/**/*.*": "KEBAB_CASE"
+    //   }
+    // ],
+    // "check-file/folder-naming-convention": [
+    //   "error",
+    //   {
+    //     "src/pages/**": "KEBAB_CASE",
+    //     "src/{modules,components,styles}/**": "KEBAB_CASE"
+    //   }
+    // ]
+  }
+}

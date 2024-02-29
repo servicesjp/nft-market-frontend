@@ -1,0 +1,19 @@
+.subMenuLogout {
+    background-color: var(--chakra-colors-red-400);
+    color: var(--chakra-colors-red-100);
+    border-radius: 0.5rem;
+}
+
+:global(.chakra-ui-dark) .subMenuLogout {
+    background-color: var(--chakra-colors-dark-background-100);
+    border: solid 1px;
+    border-color: var(--chakra-colors-red-200);
+    color: var(--chakra-colors-red-200);
+}
+
+:global(.chakra-ui-dark) .subMenuLogout:hover {
+    background-color: var(--chakra-colors-dark-background-100);
+    border: solid 1px;
+    border-color: var(--chakra-colors-red-100);
+    color: var(--chakra-colors-red-100);
+}

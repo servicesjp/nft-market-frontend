@@ -1,0 +1,7 @@
+.menuIcon path {
+    stroke: var(--chakra-colors-menu-100);
+}
+
+:global(.chakra-ui-dark) .menuIcon path {
+    stroke: var(--chakra-colors-primary-900);;
+}

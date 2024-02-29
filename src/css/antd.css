@@ -1,0 +1,9 @@
+.ant-select-selection-item-remove {
+    display: flex !important;
+}
+
+.ant-select-selector {
+
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+}

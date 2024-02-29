@@ -1,0 +1,48 @@
+.mobileMenu :global(.chakra-accordion__item):not(:first-child) {
+    margin-top: 1rem;
+    margin-bottom: 1rem !important;
+}
+
+.logoutButton path {
+    stroke: var(--chakra-colors-menu-100);
+}
+
+:global(.chakra-ui-dark) .logoutButton path {
+    stroke: var(--chakra-colors-white-100);
+}
+
+.mobileMenu.selected {
+    background-color: var(--chakra-colors-menu-100);
+}
+
+
+/* style colors of menu item links */
+/* TODO needs refactor to match up with menu-icon-button style */
+
+.menuItem {
+    color: var(--chakra-colors-menu-100) !important;
+}
+
+:global(.chakra-ui-dark) .menuItem {
+    color: var(--chakra-colors-white-75) !important;
+}
+
+.menuItemSelected {
+    color: var(--chakra-colors-primary-100) !important;
+}
+
+:global(.chakra-ui-dark) .menuItemSelected {
+    color: var(--chakra-colors-white-100) !important;
+    font-family: 'Euclid Medium';
+}
+
+/* dark mode for icons */
+/* TODO needs changes with proper icons */
+
+:global(.chakra-ui-dark) .accordionButton svg path {
+    stroke: var(--chakra-colors-white-100);
+}
+
+:global(.chakra-ui-dark) [aria-expanded="true"] .accordionButton svg path {
+    fill: var(--chakra-colors-white-100);
+}

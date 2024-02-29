@@ -1,0 +1,9 @@
+.subMenuOption:hover {
+    background-color: var(--chakra-colors-gray-200);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+:global(.chakra-ui-dark) .subMenuOption:hover {
+    background-color: var(--chakra-colors-dark-background-100);
+}

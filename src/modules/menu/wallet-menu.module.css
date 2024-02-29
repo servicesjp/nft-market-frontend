@@ -1,0 +1,9 @@
+svg.icon {
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+}
+
+svg.icon path {
+    stroke: var(--chakra-colors-chakra-body-text);
+}

@@ -1,0 +1,18 @@
+.radiofield {
+ display: none !important
+}
+
+.stack  span{
+    margin: 0;
+}
+.customRadio span {
+    display: none !important;
+}
+
+.customCheckbox span {
+    margin: 0;
+}
+
+.customCheckbox span:first-of-type {
+    display: none !important;
+}

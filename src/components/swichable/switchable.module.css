@@ -1,0 +1,16 @@
+.switchable {
+  width: 100%;
+}
+.switchableItemActive svg path{
+  fill: white
+}
+
+/* Ocultar la barra de desplazamiento pero mantener la funcionalidad */
+.switchable::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari y Opera */
+}
+
+.switchable {
+  -ms-overflow-style: none;  /* Para Internet Explorer y Edge */
+  scrollbar-width: none; /* Para Firefox */
+}

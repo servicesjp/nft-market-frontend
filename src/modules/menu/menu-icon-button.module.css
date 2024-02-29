@@ -1,0 +1,20 @@
+.menuIcon {
+    cursor: pointer;
+}
+
+.selected {
+    cursor: default;
+}
+
+.menuIcon svg {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+:global(.chakra-ui-dark) .menuIcon:not(.selected) svg path, :global(.chakra-ui-dark) .menuIcon:not(.selected) svg circle {
+    stroke: var(--chakra-colors-white-100);
+}
+
+:global(.chakra-ui-dark) .selected svg path, :global(.chakra-ui-dark) .menuIcon:not(.selected) svg circle {
+    fill: var(--chakra-colors-white-100);
+}

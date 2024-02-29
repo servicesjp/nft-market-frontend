@@ -1,0 +1,35 @@
+.rightElement path {
+  stroke: var(--chakra-colors-gray-200);
+}
+
+.inputGroup.error input, .inputGroup.error path {
+  border-color: var(--chakra-colors-red-100);
+  color: var(--chakra-colors-red-100);
+  stroke: var(--chakra-colors-red-100);
+}
+
+.inputGroup.correct input, .inputGroup.correct tpath {
+  border-color: var(--chakra-colors-green-100);
+  color: var(--chakra-colors-green-100);
+  stroke: var(--chakra-colors-green-100);
+}
+
+.inputGroup:focus-within path {
+  stroke: var(--chakra-colors-primary-100);
+}
+
+.inputGroup:focus-within input, .inputGroup:focus-visible input {
+  border-color: var(--chakra-colors-primary-100);
+  color: var(--chakra-colors-black-100);
+  box-shadow: none;
+}
+
+:global(.chakra-ui-dark) .inputGroup:focus-within path {
+  stroke: var(--chakra-colors-white-100);
+}
+
+:global(.chakra-ui-dark) .inputGroup:focus-within input, :global(.chakra-ui-dark) .inputGroup:focus-visible input {
+  border-color: var(--chakra-colors-white-100);
+  color: var(--chakra-colors-white-100);
+  box-shadow: none;
+}
